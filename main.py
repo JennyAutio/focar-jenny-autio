@@ -1,5 +1,4 @@
 from machine import Pin, PWM
-from time import sleep
 
 # Moottori A
 e1 = PWM(Pin(28))
@@ -18,10 +17,3 @@ e2.freq(1000)
 # Nopeus 75% = 49150
 # Nopeus 50% = 32767
 # Nopeus 25% = 16384
-
-n100=65534
-n75=49150
-n50=32767
-n25=16384
-n=0
-tauko=2
