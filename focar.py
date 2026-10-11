@@ -53,3 +53,12 @@ def peruuta(nopeus,aika):
 
 # LED valon kontrollointi
 
+led=Pin("LED", Pin.OUT)
+
+def vilkutaLED():
+    while True:
+        led.on()
+        sleep(1)
+        led.off()
+        sleep(1)
+
