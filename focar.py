@@ -50,6 +50,12 @@ def peruuta(nopeus,aika):
     e2.duty_u16(0)
     sleep(aika)
 
+def lopeta():
+    sleep(1)
+    e1.duty_u16(0)
+    e2.duty_u16(0)
+    sleep(1)
+
 
 # LED valon kontrollointi
 
