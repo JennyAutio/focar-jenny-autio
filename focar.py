@@ -1,3 +1,18 @@
+from machine import Pin, PWM
+from time import sleep
+
+# Moottori A
+e1 = PWM(Pin(28))
+m1 = Pin(27, Pin.OUT)
+
+#  Moottori B
+e2 = PWM(Pin(26))
+m2 = Pin(22, Pin.OUT)
+
+# Aseta PWM-taajuus 1000 Hz
+e1.freq(1000)
+e2.freq(1000)
+
 # FoCarilla liikkumiseen tarvittavat funktiot
 
 def eteen(nopeus,aika):
