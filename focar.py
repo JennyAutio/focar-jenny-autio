@@ -68,10 +68,13 @@ def lopeta():
 
 led=Pin("LED", Pin.OUT)
 
-def vilkutaLED():
-    while True:
+
+i=0
+def vilkutaLED(aika):
+    for i in range(0,aika):
         led.on()
         sleep(1)
         led.off()
         sleep(1)
+        i=i+1
 
